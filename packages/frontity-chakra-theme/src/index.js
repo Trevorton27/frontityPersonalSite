@@ -19,7 +19,7 @@ const chakraTheme = {
        * logo : "Frontity"
        * logo: "https://uploads-ssl.webflow.com/5be00771820599586e6bd032/5be0223588110a6dbcac2d05_image.svg",
        */
-      logo: "Frontity",
+      logo: "Trevor Mearns",
       showBackgroundPattern: true,
       showSocialLinks: true,
       /**
@@ -45,7 +45,7 @@ const chakraTheme = {
           400: "#87938b",
           500: "#6d7972",
           600: "#555f58",
-          700: "#323c34",
+          700: "#343a40",
           800: "#232924",
           900: "#272727"
         },

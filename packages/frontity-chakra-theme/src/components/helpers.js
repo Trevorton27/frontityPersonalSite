@@ -14,6 +14,8 @@ function getSrcSet(media) {
   return srcset;
 }
 
+// console.log('state: ', state.source)
+
 export function getMediaAttributes(state, id) {
   const media = state.source.attachment[id];
   if (!media) return {};

@@ -2,7 +2,7 @@ const settings = {
   name: "chakra-react",
   state: {
     frontity: {
-      url: "https://test.frontity.org",
+      url: "https://trevormearnssource.cyou/wp-json",
       title: "Test Frontity Blog",
       description: "WordPress installation for Frontity development"
     }
@@ -12,12 +12,13 @@ const settings = {
       name: "frontity-chakra-theme",
       state: {
         theme: {
+          logo: "Trevor Mearns",
           menu: [
-            ["Home", "/"],
-            ["Nature", "/category/nature/"],
-            ["Travel", "/category/travel/"],
-            ["Japan", "/tag/japan/"],
-            ["About Us", "/about-us/"]
+            // ["Blog", "/category/travel/"],
+            ["Contact", "/contact-trevor/"],
+            //  ["Portfolio", "/about-us/"],
+            //   ["Github", "/category/nature/"],
+            ["Banana", "/banana"]
           ],
           socialLinks: [
             ["pinterest", "https://www.pinterest.com/frontity/"],
@@ -35,7 +36,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          url: "http://trevormearnssource.cyou"
+          url: "http://trevormearnssource.cyou/wp-json"
         }
       }
     },

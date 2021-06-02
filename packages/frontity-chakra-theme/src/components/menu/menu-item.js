@@ -6,7 +6,7 @@ const MenuItem = ({ index, children, mb, link, ...rest }) => (
   <Box as="li" listStyleType="none" mb={mb} {...rest}>
     <Link
       display="block"
-      color="white"
+      color="#ffa012"
       role="group"
       pos="relative"
       minH="40px"

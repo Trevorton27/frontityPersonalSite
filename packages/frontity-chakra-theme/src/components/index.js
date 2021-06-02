@@ -2,12 +2,12 @@ import { Box, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { connect, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import React from "react";
-import Archive from "./archive";
+//import Archive from "./archive";
 import Footer from "./footer";
 import Header from "./header";
 import Loading from "./loading";
 import Page404 from "./page404";
-import Post from "./post/post";
+//import Post from "./post/post";
 import SearchResults from "./search";
 import Title from "./title";
 import FontFace from "./styles/font-face";
@@ -17,6 +17,7 @@ import FontFace from "./styles/font-face";
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+  console.log("state.source: ", state.source);
 
   const overrides = extendTheme({
     fonts: {
@@ -48,8 +49,8 @@ const Theme = ({ state }) => {
         <Switch>
           <Loading when={data.isFetching} />
           <SearchResults when={data.isSearch} />
-          <Archive when={data.isArchive} />
-          <Post when={data.isPostType} />
+          {/* <Archive when={data.isArchive} />
+          <Post when={data.isPostType} /> */}
           <Page404 when={data.is404} />
         </Switch>
       </Box>

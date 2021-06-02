@@ -34,16 +34,17 @@ const Logo = ({ isImage = true, src }) =>
   isImage ? (
     <Box as="img" src={src} width="120px" />
   ) : (
-      <Box
-        fontSize="2xl"
-        color="white"
-        fontFamily="heading"
-        textTransform="uppercase"
-        fontWeight="bold"
-      >
-        {src}
-      </Box>
-    );
+    <Box
+      fontSize="2xl"
+      color="white"
+      fontFamily="heading"
+      textTransform="uppercase"
+      fontWeight="bold"
+      href="/"
+    >
+      {src}
+    </Box>
+  );
 
 const SiteLogo = connect(({ state, ...props }) => {
   // check if the logo is a url,
